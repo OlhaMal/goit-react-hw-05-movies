@@ -1,13 +1,25 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-05-movies/static/css/main.7acaea2f.css",
-    "main.js": "/goit-react-hw-05-movies/static/js/main.07d3183d.js",
+    "main.css": "/goit-react-hw-05-movies/static/css/main.2eceac27.css",
+    "main.js": "/goit-react-hw-05-movies/static/js/main.0dd39389.js",
+    "static/js/983.db491f04.chunk.js": "/goit-react-hw-05-movies/static/js/983.db491f04.chunk.js",
+    "static/js/124.ecd99522.chunk.js": "/goit-react-hw-05-movies/static/js/124.ecd99522.chunk.js",
+    "static/js/619.6f0be5e2.chunk.js": "/goit-react-hw-05-movies/static/js/619.6f0be5e2.chunk.js",
+    "static/js/493.dccf4ba5.chunk.js": "/goit-react-hw-05-movies/static/js/493.dccf4ba5.chunk.js",
+    "static/js/736.f71814f6.chunk.js": "/goit-react-hw-05-movies/static/js/736.f71814f6.chunk.js",
+    "static/js/279.968c5919.chunk.js": "/goit-react-hw-05-movies/static/js/279.968c5919.chunk.js",
     "index.html": "/goit-react-hw-05-movies/index.html",
-    "main.7acaea2f.css.map": "/goit-react-hw-05-movies/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/goit-react-hw-05-movies/static/js/main.07d3183d.js.map"
+    "main.2eceac27.css.map": "/goit-react-hw-05-movies/static/css/main.2eceac27.css.map",
+    "main.0dd39389.js.map": "/goit-react-hw-05-movies/static/js/main.0dd39389.js.map",
+    "983.db491f04.chunk.js.map": "/goit-react-hw-05-movies/static/js/983.db491f04.chunk.js.map",
+    "124.ecd99522.chunk.js.map": "/goit-react-hw-05-movies/static/js/124.ecd99522.chunk.js.map",
+    "619.6f0be5e2.chunk.js.map": "/goit-react-hw-05-movies/static/js/619.6f0be5e2.chunk.js.map",
+    "493.dccf4ba5.chunk.js.map": "/goit-react-hw-05-movies/static/js/493.dccf4ba5.chunk.js.map",
+    "736.f71814f6.chunk.js.map": "/goit-react-hw-05-movies/static/js/736.f71814f6.chunk.js.map",
+    "279.968c5919.chunk.js.map": "/goit-react-hw-05-movies/static/js/279.968c5919.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.2eceac27.css",
+    "static/js/main.0dd39389.js"
   ]
 }
