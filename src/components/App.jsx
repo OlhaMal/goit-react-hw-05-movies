@@ -13,18 +13,18 @@ const Reviews = lazy(() => import('../pages/Reviews'));
 export const App = () => {
   return (
     <>
-    <Routes>
-      <Route path="/" element={<SharedLayout />}>
-        <Route index element={<HomePage />} />
-        <Route path="movies" element={<Movies />} />
-        <Route path='/movies/:movieId' element={<MovieDetails/>}>
-          <Route path='cast' element={<Cast/>}/>
-          <Route path='reviews' element={<Reviews/>}/>
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<HomePage />} />
+          <Route path="movies" element={<Movies />} />
+          <Route path="/movies/:movieId" element={<MovieDetails />}>
+            <Route path="cast" element={<Cast />} />
+            <Route path="reviews" element={<Reviews />} />
+          </Route>
+          <Route path="*" element={<HomePage />} />
         </Route>
-        <Route path="*" element={<HomePage />} />
-      </Route>
-    </Routes>
-    <ToastContainer
+      </Routes>
+      <ToastContainer
         position="top-right"
         autoClose={2000}
         hideProgressBar

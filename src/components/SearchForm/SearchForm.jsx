@@ -1,8 +1,10 @@
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams} from 'react-router-dom';
 import { MoviesList } from 'components/MoviesList/MoviesList';
 import { searchMovies } from '../../services/movieApi';
 import { useState, useEffect } from 'react';
-import { SearchBox } from './SearchBox';
+import { SearchBox } from './SearchBox/SearchBox';
+import { NoResults } from './NoResults';
+
 
 export const SearchForm = () => {
   const [movies, setMovies] = useState([]);
@@ -26,10 +28,10 @@ export const SearchForm = () => {
   }, [query]);
 
   return (
-    <div>
+    <div style={{position: 'relative'}}>
       <SearchBox onSubmitInput={handleSubmit} />
-      {movies.length === 0 && query !== '' && <p>There is no movies matching your search: '{query}'</p>}
       {movies.length !== 0 && <MoviesList movies={movies} />}
+      {movies.length === 0 && query !== '' && <NoResults search={query}/>}
     </div>
   );
 };

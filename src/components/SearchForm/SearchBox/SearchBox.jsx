@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { toast } from 'react-toastify';
+import PropTypes from 'prop-types';
+import css from './SearchBox.module.css'
 
 export const SearchBox = ({ onSubmitInput }) => {
   const [inputValue, setInputValue] = useState('');
@@ -30,7 +32,7 @@ export const SearchBox = ({ onSubmitInput }) => {
   };
 
   return (
-    <form onSubmit={handleSubmitForm}>
+    <form onSubmit={handleSubmitForm} className={css.from}>
       <input
         type="text"
         placeholder="Search films"
@@ -38,8 +40,14 @@ export const SearchBox = ({ onSubmitInput }) => {
         autoFocus
         onChange={handleChange}
         autoComplete="off"
+        className={css.input}
       />
-      <button type="submit">Search</button>
+      <button type="submit" className={css.submitBtn}>Search</button>
     </form>
+    
   );
 };
+
+SearchBox.propTypes = {
+  onSubmitInput: PropTypes.func.isRequired,
+}

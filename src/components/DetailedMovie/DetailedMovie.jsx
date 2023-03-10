@@ -3,6 +3,7 @@ import { useParams, useLocation, Link } from 'react-router-dom';
 // import defaultimage from '../../img/defaultposter.png'
 import { getMovieDetails } from 'services/movieApi';
 import { DetailedMovieCard } from './DetailedMovieCard';
+import css from './DetailedMovie.module.css'
 
 export const DetailedMovie = () => {
   const { movieId } = useParams();
@@ -20,9 +21,9 @@ export const DetailedMovie = () => {
   }, [movieId]);
 
   return (
-    <div>
+    <div className={css.cardContainer}>
         <Link to={goBack.current}>
-            <button type='button'>Go back</button>
+            <button type='button' className={css.goBackBtn}>Go back</button>
         </Link>
         <DetailedMovieCard movie={movieDetails}/>
     </div>
